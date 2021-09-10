@@ -16,6 +16,13 @@
 		3407D5D9215D2AB800C9D40B /* NeededForBLE.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3407D5D8215D2AB800C9D40B /* NeededForBLE.swift */; };
 		7930A1FF82816135F015ED1B /* libPods-ledgerlivemobileTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 854A3B027231E885CAD3722D /* libPods-ledgerlivemobileTests.a */; };
 		9B7ACA23F80A40489C69872B /* libRNAnalytics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EEF3655E56C24042B39DF4D3 /* libRNAnalytics.a */; };
+		A9BBD55E26EB7DF4003BB4D1 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9BBD55D26EB7DF4003BB4D1 /* WidgetKit.framework */; };
+		A9BBD56026EB7DF4003BB4D1 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9BBD55F26EB7DF4003BB4D1 /* SwiftUI.framework */; };
+		A9BBD56326EB7DF4003BB4D1 /* LedgerWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BBD56226EB7DF4003BB4D1 /* LedgerWidget.swift */; };
+		A9BBD56626EB7DF7003BB4D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9BBD56526EB7DF7003BB4D1 /* Assets.xcassets */; };
+		A9BBD56826EB7DF7003BB4D1 /* LedgerWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = A9BBD56426EB7DF4003BB4D1 /* LedgerWidget.intentdefinition */; };
+		A9BBD56926EB7DF7003BB4D1 /* LedgerWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = A9BBD56426EB7DF4003BB4D1 /* LedgerWidget.intentdefinition */; };
+		A9BBD56C26EB7DF7003BB4D1 /* LedgerWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A9BBD55C26EB7DF4003BB4D1 /* LedgerWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		AD6EE26071FA4673B5C89936 /* FontAwesome5_Pro_Brands.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4BD106EA37CA467F9525D699 /* FontAwesome5_Pro_Brands.ttf */; };
 		AD7A77B84DF3487C812B091B /* FontAwesome5_Pro_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 668E26194DD94B6D8F10D450 /* FontAwesome5_Pro_Regular.ttf */; };
 		B116B48438CB416C980DD0E7 /* Inter-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = F3993D7FF61549FE9270BC06 /* Inter-SemiBold.otf */; };
@@ -36,7 +43,28 @@
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
 			remoteInfo = ledgerlivemobile;
 		};
+		A9BBD56A26EB7DF7003BB4D1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A9BBD55B26EB7DF4003BB4D1;
+			remoteInfo = LedgerWidgetExtension;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A9BBD56D26EB7DF7003BB4D1 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A9BBD56C26EB7DF7003BB4D1 /* LedgerWidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
@@ -62,7 +90,7 @@
 		3407D5D8215D2AB800C9D40B /* NeededForBLE.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeededForBLE.swift; sourceTree = "<group>"; };
 		3E71666B2C4291351C2BA23C /* Pods-ledgerlivemobileTests.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ledgerlivemobileTests.staging.xcconfig"; path = "Target Support Files/Pods-ledgerlivemobileTests/Pods-ledgerlivemobileTests.staging.xcconfig"; sourceTree = "<group>"; };
 		44387CB2EE84464C83A75FD7 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "OpenSans-Regular.ttf"; path = "../assets/fonts/OpenSans-Regular.ttf"; sourceTree = "<group>"; };
-		4BD106EA37CA467F9525D699 /* FontAwesome5_Pro_Brands.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Pro_Brands.ttf; path = ../assets/fonts/FontAwesome5_Pro_Brands.ttf; sourceTree = "<group>"; };
+		4BD106EA37CA467F9525D699 /* FontAwesome5_Pro_Brands.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Pro_Brands.ttf; path = ../assets/fonts/FontAwesome5_Pro_Brands.ttf; sourceTree = "<group>"; };
 		4C2397DC873B4F8E91B750A8 /* Inter-Regular.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Inter-Regular.otf"; path = "../assets/fonts/Inter-Regular.otf"; sourceTree = "<group>"; };
 		4DF02CF2330A6B120535EF53 /* Pods-ledgerlivemobileTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ledgerlivemobileTests.release.xcconfig"; path = "Target Support Files/Pods-ledgerlivemobileTests/Pods-ledgerlivemobileTests.release.xcconfig"; sourceTree = "<group>"; };
 		55D1E3EC76A24523BF26BC61 /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Regular.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf"; sourceTree = "<group>"; };
@@ -71,16 +99,23 @@
 		5F63C9E4AC284203A95B417E /* libz.tbd */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		612C2DE49D8C4046AE4FF442 /* Lottie.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = Lottie.framework; path = System/Library/Frameworks/Lottie.framework; sourceTree = SDKROOT; };
 		61C9A3D5E8F7421487C85E86 /* Ionicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Ionicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; };
-		668E26194DD94B6D8F10D450 /* FontAwesome5_Pro_Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Pro_Regular.ttf; path = ../assets/fonts/FontAwesome5_Pro_Regular.ttf; sourceTree = "<group>"; };
+		668E26194DD94B6D8F10D450 /* FontAwesome5_Pro_Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Pro_Regular.ttf; path = ../assets/fonts/FontAwesome5_Pro_Regular.ttf; sourceTree = "<group>"; };
 		6C1563DFEE064431AF4F8F6B /* FontAwesome.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; };
-		6D891D99F1084D459DBF667F /* FontAwesome5_Pro_Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Pro_Light.ttf; path = ../assets/fonts/FontAwesome5_Pro_Light.ttf; sourceTree = "<group>"; };
+		6D891D99F1084D459DBF667F /* FontAwesome5_Pro_Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Pro_Light.ttf; path = ../assets/fonts/FontAwesome5_Pro_Light.ttf; sourceTree = "<group>"; };
 		793F2C3B8DC0475194262928 /* libRCTCamera.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRCTCamera.a; sourceTree = "<group>"; };
 		854A3B027231E885CAD3722D /* libPods-ledgerlivemobileTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ledgerlivemobileTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		887CA7F3B5FF4445BB1C5960 /* libRNLibLedgerCore.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNLibLedgerCore.a; sourceTree = "<group>"; };
 		9390D938BCB148F2A34703E3 /* AntDesign.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = AntDesign.ttf; path = "../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf"; sourceTree = "<group>"; };
 		976AEE7A15C2428DB85E53B3 /* libPasscodeAuth.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libPasscodeAuth.a; sourceTree = "<group>"; };
-		991AA9919E4840DBB799E117 /* FontAwesome5_Pro_Solid.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Pro_Solid.ttf; path = ../assets/fonts/FontAwesome5_Pro_Solid.ttf; sourceTree = "<group>"; };
+		991AA9919E4840DBB799E117 /* FontAwesome5_Pro_Solid.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Pro_Solid.ttf; path = ../assets/fonts/FontAwesome5_Pro_Solid.ttf; sourceTree = "<group>"; };
 		99A82013C77445B4B2B54AB5 /* EvilIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = EvilIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; };
+		A9BBD55C26EB7DF4003BB4D1 /* LedgerWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = LedgerWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9BBD55D26EB7DF4003BB4D1 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		A9BBD55F26EB7DF4003BB4D1 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		A9BBD56226EB7DF4003BB4D1 /* LedgerWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LedgerWidget.swift; sourceTree = "<group>"; };
+		A9BBD56426EB7DF4003BB4D1 /* LedgerWidget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = LedgerWidget.intentdefinition; sourceTree = "<group>"; };
+		A9BBD56526EB7DF7003BB4D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A9BBD56726EB7DF7003BB4D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C44A2A704D1E428CB7694186 /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Solid.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Solid.ttf"; sourceTree = "<group>"; };
 		C7C5BB743ED04E53A2323979 /* OpenSans-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "OpenSans-SemiBold.ttf"; path = "../assets/fonts/OpenSans-SemiBold.ttf"; sourceTree = "<group>"; };
 		CA4B7558A3274D76ACA6E26C /* MaterialIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; };
@@ -119,6 +154,15 @@
 				BC25CCBE6BEA4D62BE203C17 /* libz.tbd in Frameworks */,
 				CB46822924B04E80814C603E /* libPasscodeAuth.a in Frameworks */,
 				2372D3D5180104DBED4E22EE /* libPods-ledgerlivemobile.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9BBD55926EB7DF4003BB4D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9BBD56026EB7DF4003BB4D1 /* SwiftUI.framework in Frameworks */,
+				A9BBD55E26EB7DF4003BB4D1 /* WidgetKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,6 +278,7 @@
 				13B07FAE1A68108700A75B9A /* ledgerlivemobile */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* ledgerlivemobileTests */,
+				A9BBD56126EB7DF4003BB4D1 /* LedgerWidget */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				34457EB62003A12400415724 /* Recovered References */,
 				90B115AE643A42D1BF8AA6F4 /* Frameworks */,
@@ -251,6 +296,7 @@
 			children = (
 				13B07F961A680F5B00A75B9A /* ledgerlivemobile.app */,
 				00E356EE1AD99517003FC87E /* ledgerlivemobileTests.xctest */,
+				A9BBD55C26EB7DF4003BB4D1 /* LedgerWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -262,8 +308,21 @@
 				5F63C9E4AC284203A95B417E /* libz.tbd */,
 				31C4672E151A9F9D4A18DB00 /* libPods-ledgerlivemobile.a */,
 				854A3B027231E885CAD3722D /* libPods-ledgerlivemobileTests.a */,
+				A9BBD55D26EB7DF4003BB4D1 /* WidgetKit.framework */,
+				A9BBD55F26EB7DF4003BB4D1 /* SwiftUI.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A9BBD56126EB7DF4003BB4D1 /* LedgerWidget */ = {
+			isa = PBXGroup;
+			children = (
+				A9BBD56226EB7DF4003BB4D1 /* LedgerWidget.swift */,
+				A9BBD56426EB7DF4003BB4D1 /* LedgerWidget.intentdefinition */,
+				A9BBD56526EB7DF7003BB4D1 /* Assets.xcassets */,
+				A9BBD56726EB7DF7003BB4D1 /* Info.plist */,
+			);
+			path = LedgerWidget;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -301,15 +360,34 @@
 				A3B86A0A04E74A989A896DF8 /* Upload Debug Symbols to Sentry */,
 				760D57A3243689E700E1EDF6 /* ShellScript */,
 				CF86CBF56A06289606586AED /* [CP] Embed Pods Frameworks */,
+				A9BBD56D26EB7DF7003BB4D1 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				A9BBD56B26EB7DF7003BB4D1 /* PBXTargetDependency */,
 			);
 			name = ledgerlivemobile;
 			productName = "Hello World";
 			productReference = 13B07F961A680F5B00A75B9A /* ledgerlivemobile.app */;
 			productType = "com.apple.product-type.application";
+		};
+		A9BBD55B26EB7DF4003BB4D1 /* LedgerWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9BBD57126EB7DF7003BB4D1 /* Build configuration list for PBXNativeTarget "LedgerWidgetExtension" */;
+			buildPhases = (
+				A9BBD55826EB7DF4003BB4D1 /* Sources */,
+				A9BBD55926EB7DF4003BB4D1 /* Frameworks */,
+				A9BBD55A26EB7DF4003BB4D1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LedgerWidgetExtension;
+			productName = LedgerWidgetExtension;
+			productReference = A9BBD55C26EB7DF4003BB4D1 /* LedgerWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -317,6 +395,7 @@
 		83CBB9F71A601CBA00E9B192 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1250;
 				LastUpgradeCheck = 1160;
 				ORGANIZATIONNAME = "Ledger SAS";
 				TargetAttributes = {
@@ -341,6 +420,11 @@
 							};
 						};
 					};
+					A9BBD55B26EB7DF4003BB4D1 = {
+						CreatedOnToolsVersion = 12.5.1;
+						DevelopmentTeam = X6LFS5BQKN;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "ledgerlivemobile" */;
@@ -358,6 +442,7 @@
 			targets = (
 				13B07F861A680F5B00A75B9A /* ledgerlivemobile */,
 				00E356ED1AD99517003FC87E /* ledgerlivemobileTests */,
+				A9BBD55B26EB7DF4003BB4D1 /* LedgerWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -383,6 +468,14 @@
 				F99BEAC629E8441C83104922 /* FontAwesome5_Pro_Light.ttf in Resources */,
 				AD7A77B84DF3487C812B091B /* FontAwesome5_Pro_Regular.ttf in Resources */,
 				E55EFC09114D43B3AB041882 /* FontAwesome5_Pro_Solid.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9BBD55A26EB7DF4003BB4D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9BBD56626EB7DF7003BB4D1 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -564,8 +657,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				3407D5D9215D2AB800C9D40B /* NeededForBLE.swift in Sources */,
+				A9BBD56926EB7DF7003BB4D1 /* LedgerWidget.intentdefinition in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9BBD55826EB7DF4003BB4D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9BBD56326EB7DF4003BB4D1 /* LedgerWidget.swift in Sources */,
+				A9BBD56826EB7DF7003BB4D1 /* LedgerWidget.intentdefinition in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -576,6 +679,11 @@
 			isa = PBXTargetDependency;
 			target = 13B07F861A680F5B00A75B9A /* ledgerlivemobile */;
 			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
+		};
+		A9BBD56B26EB7DF7003BB4D1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A9BBD55B26EB7DF4003BB4D1 /* LedgerWidgetExtension */;
+			targetProxy = A9BBD56A26EB7DF7003BB4D1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -669,6 +777,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F706F7BE3B5F9DD387AB929A /* Pods-ledgerlivemobile.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = ledgerlivemobile/ledgerlivemobile.entitlements;
@@ -720,6 +829,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F77638C1F4BC132FB97FEEAF /* Pods-ledgerlivemobile.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = ledgerlivemobile/ledgerlivemobile.entitlements;
@@ -810,7 +920,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LIBRARY_SEARCH_PATHS = (
 					"\"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)\"",
-					"\"$(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)\"",
+					"\"$(TOOLCHAIN_DIR)/usr/lib/swift-5.2/$(PLATFORM_NAME)\"",
 					"\"$(inherited)\"",
 				);
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -824,6 +934,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D249644B66FAECFBB42408A6 /* Pods-ledgerlivemobile.staging.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = ledgerlivemobile/ledgerlivemobile.entitlements;
@@ -955,11 +1066,6 @@
 				INFOPLIST_PREFIX_HEADER = "${BUILD_DIR}/GeneratedInfoPlistDotEnv.h";
 				INFOPLIST_PREPROCESS = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LIBRARY_SEARCH_PATHS = (
-					"\"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)\"",
-					"\"$(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)\"",
-					"\"$(inherited)\"",
-				);
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -1014,7 +1120,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LIBRARY_SEARCH_PATHS = (
 					"\"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)\"",
-					"\"$(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)\"",
+					"\"$(TOOLCHAIN_DIR)/usr/lib/swift-5.2/$(PLATFORM_NAME)\"",
 					"\"$(inherited)\"",
 				);
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -1023,6 +1129,110 @@
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
+		};
+		A9BBD56E26EB7DF7003BB4D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = X6LFS5BQKN;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = LedgerWidget/Info.plist;
+				INFOPLIST_PREFIX_HEADER = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ledger.live.LedgerWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A9BBD56F26EB7DF7003BB4D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = X6LFS5BQKN;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = LedgerWidget/Info.plist;
+				INFOPLIST_PREFIX_HEADER = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ledger.live.LedgerWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A9BBD57026EB7DF7003BB4D1 /* Staging */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = X6LFS5BQKN;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = LedgerWidget/Info.plist;
+				INFOPLIST_PREFIX_HEADER = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ledger.live.LedgerWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Staging;
 		};
 /* End XCBuildConfiguration section */
 
@@ -1053,6 +1263,16 @@
 				83CBBA201A601CBA00E9B192 /* Debug */,
 				83CBBA211A601CBA00E9B192 /* Release */,
 				76138D09243CBC8E00264435 /* Staging */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9BBD57126EB7DF7003BB4D1 /* Build configuration list for PBXNativeTarget "LedgerWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9BBD56E26EB7DF7003BB4D1 /* Debug */,
+				A9BBD56F26EB7DF7003BB4D1 /* Release */,
+				A9BBD57026EB7DF7003BB4D1 /* Staging */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
