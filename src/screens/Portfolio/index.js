@@ -21,6 +21,7 @@ import GraphCardContainer from "./GraphCardContainer";
 import { DistributionList } from "../Distribution";
 import Carousel from "../../components/Carousel";
 import Button from "../../components/Button";
+import useWidget from "../../components/useWidget";
 import StickyHeader from "./StickyHeader";
 import Header from "./Header";
 import extraStatusBarPadding from "../../logic/extraStatusBarPadding";
@@ -52,6 +53,8 @@ export default function PortfolioScreen({ navigation }: Props) {
   const counterValueCurrency = useSelector(counterValueCurrencySelector);
   const portfolio = usePortfolio();
   const { t } = useTranslation();
+
+  useWidget();
 
   const refreshAccountsOrdering = useRefreshAccountsOrdering();
   useFocusEffect(refreshAccountsOrdering);
