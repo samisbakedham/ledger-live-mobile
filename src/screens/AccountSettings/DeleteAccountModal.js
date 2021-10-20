@@ -23,7 +23,7 @@ function DeleteAccountModal({ onRequestClose, deleteAccount }: Props) {
   return (
     <ModalBottomAction
       title={<Trans i18nKey="account.settings.delete.confirmationTitle" />}
-      dontWrapDesc
+      shouldWrapDesc = {false}
       icon={
         <Circle bg={colors.lightAlert} size={56}>
           <Trash size={24} color={colors.alert} />
