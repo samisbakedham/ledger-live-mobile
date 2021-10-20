@@ -11,7 +11,7 @@ export default class ModalBottomAction extends Component<{
   shouldWrapDesc?: boolean,
 }> {
   render() {
-    const { icon, title, description, footer, dontWrapDesc } = this.props;
+    const { icon, title, description, footer, shouldWrapDesc = true } = this.props;
     return (
       <View style={styles.root}>
         {icon && <View style={styles.icon}>{icon}</View>}
