@@ -21,7 +21,7 @@ export default class ModalBottomAction extends Component<{
           </LText>
         ) : null}
         <View style={styles.body}>
-          {description && !dontWrapDesc ? (
+          {description && shouldWrapDesc ? (
             <LText style={styles.description} color="grey">
               {description}
             </LText>
