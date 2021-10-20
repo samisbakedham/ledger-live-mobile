@@ -8,7 +8,7 @@ export default class ModalBottomAction extends Component<{
   title?: *,
   description?: *,
   footer: *,
-  dontWrapDesc?: boolean,
+  shouldWrapDesc?: boolean,
 }> {
   render() {
     const { icon, title, description, footer, dontWrapDesc } = this.props;
