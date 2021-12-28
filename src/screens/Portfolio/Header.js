@@ -13,6 +13,7 @@ import HeaderSynchronizing from "../../components/HeaderSynchronizing";
 import Touchable from "../../components/Touchable";
 import BellIcon from "../../icons/Bell";
 import SettingsIcon from "../../icons/Settings";
+import DeviceIcon from "../../icons/NanoS";
 import { NavigatorName, ScreenName } from "../../const";
 import { scrollToTop } from "../../navigation/utils";
 import LText from "../../components/LText";
@@ -47,6 +48,10 @@ export default function PortfolioHeader() {
 
   const onSettingsButtonPress = useCallback(() => {
     navigation.navigate(NavigatorName.Settings);
+  }, [navigation]);
+
+  const onDeviceButtonPress = useCallback(() => {
+    navigation.navigate(NavigatorName.Manager);
   }, [navigation]);
 
   const isUpToDate = useSelector(isUpToDateSelector);
@@ -94,6 +99,11 @@ export default function PortfolioHeader() {
       <View style={[styles.distributionButton, styles.marginLeft]}>
         <Touchable onPress={onSettingsButtonPress}>
           <SettingsIcon size={18} color={colors.grey} />
+        </Touchable>
+      </View>
+      <View style={[styles.distributionButton, styles.marginLeft]}>
+        <Touchable onPress={onDeviceButtonPress}>
+          <DeviceIcon size={18} color={colors.grey} />
         </Touchable>
       </View>
     </View>

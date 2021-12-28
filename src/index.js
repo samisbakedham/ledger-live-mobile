@@ -83,6 +83,7 @@ import NavBarColorHandler from "./components/NavBarColorHandler";
 import { setOsTheme, setTheme } from "./actions/settings";
 import FirmwareUpdateBanner from "./components/FirmwareUpdateBanner";
 import StyleProvider from "./StyleProvider";
+import MarketDataProvider from "./screens/Market/MarketDataProviderWrapper";
 
 const themes = {
   light: lightTheme,
@@ -466,11 +467,13 @@ export default class Root extends Component<
                                         <NotificationsProvider>
                                           <SnackbarContainer />
                                           <NftMetadataProvider>
-                                            <App
-                                              importDataString={
-                                                importDataString
-                                              }
-                                            />
+                                            <MarketDataProvider>
+                                              <App
+                                                importDataString={
+                                                  importDataString
+                                                }
+                                              />
+                                            </MarketDataProvider>
                                           </NftMetadataProvider>
                                         </NotificationsProvider>
                                       </ToastProvider>
