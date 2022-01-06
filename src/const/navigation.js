@@ -313,6 +313,7 @@ export const ScreenName = {
   RequestAccountsSelectAccount: "RequestAccountsSelectAccount",
 
   MarketList: "MarketList",
+  MarketCurrencySelect: "MarketCurrencySelect",
   MarketDetail: "MarketDetail",
 
   VerifyAccount: "VerifyAccount",
