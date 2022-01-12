@@ -1,3 +1,4 @@
+/* eslint-disable import/no-unresolved */
 // @flow
 import "../shim";
 import "./polyfill";
@@ -82,7 +83,9 @@ import SnackbarContainer from "./screens/NotificationCenter/Snackbar/SnackbarCon
 import NavBarColorHandler from "./components/NavBarColorHandler";
 import { setOsTheme, setTheme } from "./actions/settings";
 import FirmwareUpdateBanner from "./components/FirmwareUpdateBanner";
+// $FlowFixMe
 import StyleProvider from "./StyleProvider";
+// $FlowFixMe
 import MarketDataProvider from "./screens/Market/MarketDataProviderWrapper";
 
 const themes = {
