@@ -1,5 +1,11 @@
 // @flow
-import React, { useMemo, useContext, useCallback, useEffect, useState } from "react";
+import React, {
+  useMemo,
+  useContext,
+  useCallback,
+  useEffect,
+  useState,
+} from "react";
 import i18next from "i18next";
 import { initReactI18next } from "react-i18next";
 import type { TFunction } from "react-i18next";
