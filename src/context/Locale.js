@@ -13,19 +13,16 @@ import {
 } from "../languages";
 import { languageSelector } from "../reducers/settings";
 
-
-i18next
-  .use(initReactI18next)
-  .init({
-    fallbackLng: DEFAULT_LANGUAGE_LOCALE,
-    resources: locales,
-    whitelist: Object.keys(locales),
-    ns: ["common"],
-    defaultNS: "common",
-    interpolation: {
-      escapeValue: false, // not needed for react as it does escape per default to prevent xss!
-    },
-  });
+i18next.use(initReactI18next).init({
+  fallbackLng: DEFAULT_LANGUAGE_LOCALE,
+  resources: locales,
+  whitelist: Object.keys(locales),
+  ns: ["common"],
+  defaultNS: "common",
+  interpolation: {
+    escapeValue: false, // not needed for react as it does escape per default to prevent xss!
+  },
+});
 
 export { i18next as i18n };
 
