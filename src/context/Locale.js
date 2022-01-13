@@ -1,11 +1,10 @@
 // @flow
-import React, { useMemo, useCallback, useEffect, useState } from "react";
+import React, { useMemo, useContext, useCallback, useEffect, useState } from "react";
 import i18next from "i18next";
 import { initReactI18next } from "react-i18next";
 import type { TFunction } from "react-i18next";
 import AsyncStorage from "@react-native-community/async-storage";
 import { useSelector } from "react-redux";
-import { useContext } from "react";
 import {
   DEFAULT_LANGUAGE_LOCALE,
   getDefaultLanguageLocale,
